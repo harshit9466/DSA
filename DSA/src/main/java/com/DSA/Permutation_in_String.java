@@ -62,7 +62,7 @@ public class Permutation_in_String {
         // Test Case 1
         String s1 = "ab";
         String s2 = "eidbaooo";
-        System.out.println(solution.checkInclusion(s1, s2)); // Expected: true
+        System.out.println(solution.checkInclusion(s1, s2));
 
     }
 }

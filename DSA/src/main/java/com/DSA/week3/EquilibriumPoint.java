@@ -12,7 +12,7 @@ public class EquilibriumPoint
 		//		int size = arr.length;
 		//
 		//		firstSum = arr[0];
-		//		lastSum = arr[size];
+		//		lastSum = arr[size-1];
 		//		int result = -1;
 		//
 		//		int i = 0;
@@ -48,14 +48,14 @@ public class EquilibriumPoint
 		int leftSum = 0;
 		for(int i = 0; i < arr.length; i++)
 		{
-			totalSum -= arr[i];
+			totalSum -= arr[i]; // rightSum
 
-			if(leftSum == totalSum)
+			if(leftSum == totalSum) // check if its equilibrium
 			{
 				return i;
 			}
 
-			leftSum += arr[i];
+			leftSum += arr[i]; // increase the leftSum
 		}
 
 		return -1;
